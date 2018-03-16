@@ -15,7 +15,7 @@ It can also be used to play videos in any subclass of UIView.
 
 
 ## Download
-Drag and drop the AutoPlayVideo folder in your project
+Drag and drop the VideoPlayLibrary folder in your project
 ## Usage
 
 #### Adopt ASAutoPlayVideoLayerContainer protocol in your UITableviewCell subclass like below.
