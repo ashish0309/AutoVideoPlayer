@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                   "https://v.pinimg.com/videos/720p/77/4f/21/774f219598dde62c33389469f5c1b5d1.mp4",
                   "https://i.pinimg.com/564x/ef/17/51/ef17519f5e473adc01dfd64c35cf44d4.jpg",
                   "https://i.pinimg.com/564x/6f/5f/fb/6f5ffb82a1f9a9f7e478b8a2486831f5.jpg",
-                  "https://i.pinimg.com/564x/49/6d/0a/496d0a4b97df35ae4b719e04a08f093a.jpg",
+                  "https://v.pinimg.com/videos/720p/75/40/9a/75409a62e9fb61a10b706d8f0c94de9a.mp4",
                   "https://v.pinimg.com/videos/720p/0d/29/18/0d2918323789eabdd7a12cdd658eda04.mp4",
                   "https://i.pinimg.com/564x/97/a5/51/97a5513d3c512eb382e564ba542d917b.jpg",
                   "https://v.pinimg.com/videos/720p/dd/24/bb/dd24bb9cd68e9e25d1def88cad0a9ea7.mp4",
@@ -36,6 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let videoImages = [
                        "https://i.pinimg.com/videos/thumbnails/originals/77/4f/21/774f219598dde62c33389469f5c1b5d1-00001.jpg",
+                       "https://i.pinimg.com/videos/thumbnails/originals/75/40/9a/75409a62e9fb61a10b706d8f0c94de9a-00001.jpg",
                        "https://i.pinimg.com/videos/thumbnails/originals/0d/29/18/0d2918323789eabdd7a12cdd658eda04-00001.jpg",
                        "https://i.pinimg.com/videos/thumbnails/originals/dd/24/bb/dd24bb9cd68e9e25d1def88cad0a9ea7-00001.jpg",
                        "https://i.pinimg.com/videos/thumbnails/originals/d5/15/78/d51578c69d36c93c6e20144e9f887c73-00001.jpg",
@@ -45,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                        "https://i.pinimg.com/videos/thumbnails/originals/65/b0/54/65b05496c385c89f79635738adc3b15d-00001.jpg",
                        "https://i.pinimg.com/videos/thumbnails/originals/86/a1/c6/86a1c63fc58b2e1ef18878b7428912dc-00001.jpg"
                       ]
-    let videoIndexes = [1:0, 5:1, 7:2, 9:3, 10:4, 12:5, 13:6, 14:7, 18:8]
+    let videoIndexes = [1:0, 4:1, 5:2, 7:3, 9:4, 10:5, 12:6, 13:7, 14:8, 18:9]
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +59,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cellNib = UINib(nibName:loadingCellTableViewCellCellIdentifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: loadingCellTableViewCellCellIdentifier)
         tableView.separatorStyle = .none
-        NotificationCenter.default.addObserver(self, selector:#selector(self.appEnteredFromBackground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.appEnteredFromBackground),
+                                               name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         
     }
     

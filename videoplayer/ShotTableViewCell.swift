@@ -13,9 +13,8 @@ class ShotTableViewCell: UITableViewCell, ASAutoPlayVideoLayerContainer {
     @IBOutlet var shotImageView: UIImageView!
     var playerController: ASVideoPlayerController?
     var videoLayer: AVPlayerLayer = AVPlayerLayer()
-    
     var videoURL: String? {
-        didSet{
+        didSet {
             if let videoURL = videoURL {
                 ASVideoPlayerController.sharedVideoPlayer.setupVideoFor(url: videoURL)
             }
@@ -33,9 +32,12 @@ class ShotTableViewCell: UITableViewCell, ASAutoPlayVideoLayerContainer {
         videoLayer.backgroundColor = UIColor.clear.cgColor
         videoLayer.videoGravity = AVLayerVideoGravity.resize
         shotImageView.layer.addSublayer(videoLayer)
+        selectionStyle = .none
     }
     
-    func configureCell(imageUrl: String?, description: String, videoUrl: String?){
+    func configureCell(imageUrl: String?,
+                       description: String,
+                       videoUrl: String?) {
         self.descriptionLabel.text = description
         self.shotImageView.imageURL = imageUrl
         self.videoURL = videoUrl
@@ -45,24 +47,23 @@ class ShotTableViewCell: UITableViewCell, ASAutoPlayVideoLayerContainer {
         shotImageView.imageURL = nil
         super.prepareForReuse()
     }
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        let width: CGFloat = bounds.size.width - 30 - 16
-        videoLayer.frame = CGRect(x: 0, y: 0, width: width, height: width * 0.9)
+        let horizontalMargin: CGFloat = 15
+        let padding: CGFloat = 8
+        let width: CGFloat = bounds.size.width - horizontalMargin * 2 - padding * 2
+        let height: CGFloat = (width * 0.9).rounded(.up)
+        videoLayer.frame = CGRect(x: 0, y: 0, width: width, height: height)
     }
     
     func visibleVideoHeight() -> CGFloat {
-        var frame: CGRect? = self.superview?.superview?.convert(shotImageView.frame, from: shotImageView)
-        if let convertedFrame = frame, let superView = self.superview?.superview {
-            frame = convertedFrame.intersection(superView.frame)
-            return frame!.size.height
+        let videoFrameInParentSuperView: CGRect? = self.superview?.superview?.convert(shotImageView.frame, from: shotImageView)
+        guard let videoFrame = videoFrameInParentSuperView,
+            let superViewFrame = superview?.frame else {
+             return 0
         }
-        return 0
+        let visibleVideoFrame = videoFrame.intersection(superViewFrame)
+        return visibleVideoFrame.size.height
     }
 }

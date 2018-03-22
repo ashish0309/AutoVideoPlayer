@@ -10,8 +10,8 @@ import UIKit
 import AVFoundation
 
 /**
- protocol that needs to be adopted by subclass of any UIView
- that wants to play video
+ Protocol that needs to be adopted by subclass of any UIView
+ that wants to play video.
  */
 protocol ASAutoPlayVideoLayerContainer {
     var videoURL: String? { get set }
@@ -20,13 +20,21 @@ protocol ASAutoPlayVideoLayerContainer {
 }
 
 class ASVideoPlayerController: NSObject, NSCacheDelegate {
+    static var minimumLayerHeightToPlay: CGFloat = 60
     static private var playerViewControllerKVOContext = 0
     static let sharedVideoPlayer = ASVideoPlayerController()
-    
+    //video url for currently playing video
     private var videoURL: String?
+    /**
+     Stores video url as key and true as value when player item associated to the url
+     is being observed for its status change.
+     Helps in removing observers for player items that are not being played.
+     */
     private var observingURLs = Dictionary<String, Bool>()
+    // Cache of player and player item
     private var videoCache = NSCache<NSString, ASVideoContainer>()
     private var videoLayers = VideoLayers()
+    // Current AVPlapyerLayer that is playing video
     private var currentLayer: AVPlayerLayer?
     
     override init() {
@@ -34,6 +42,11 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
         videoCache.delegate = self
     }
     
+    /**
+     Download of an asset of url if corresponding videocontainer
+     is not present.
+     Uses the asset to create new playeritem.
+     */
     func setupVideoFor(url: String) {
         if self.videoCache.object(forKey: url as NSString) != nil {
             return
@@ -54,7 +67,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
                 strongSelf.videoCache.setObject(videoContainer, forKey: url as NSString)
                 videoContainer.player.replaceCurrentItem(with: videoContainer.playerItem)
                 /**
-                 try to play video again in case when playvideo method was called and
+                 Try to play video again in case when playvideo method was called and
                  asset was not obtained, so, earlier video must have not run
                  */
                 if strongSelf.videoURL == url, let layer = strongSelf.currentLayer {
@@ -72,7 +85,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
             videoContainer.playOn = true
             addObservers(url: url, videoContainer: videoContainer)
         }
-        //give chance for current video player to be ready to play
+        // Give chance for current video player to be ready to play
         DispatchQueue.main.async {
             if let videoContainer = self.videoCache.object(forKey: url as NSString),
                 videoContainer.player.currentItem?.status == .readyToPlay  {
@@ -106,12 +119,16 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
         }
         layer.player = nil
     }
-
-    //play video again in case the current player has finished playing
+    
+    private func pauseRemoveLayer(layer: AVPlayerLayer,url: String, layerHeight: CGFloat) {
+        pauseVideo(forLayer: layer, url: url)
+    }
+    
+    // Play video again in case the current player has finished playing
     @objc func playerDidFinishPlaying(note: NSNotification) {
         guard let playerItem = note.object as? AVPlayerItem,
             let currentPlayer = currentVideoContainer()?.player else {
-            return
+                return
         }
         if let currentItem = currentPlayer.currentItem, currentItem == playerItem {
             currentPlayer.seek(to: kCMTimeZero)
@@ -126,10 +143,6 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
             }
         }
         return nil
-    }
-    
-    private func pauseRemoveLayer(layer: AVPlayerLayer,url: String, layerHeight: CGFloat) {
-        pauseVideo(forLayer: layer, url: url)
     }
     
     private func addObservers(url: String, videoContainer: ASVideoContainer) {
@@ -161,8 +174,8 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
     }
     
     /**
-     play uitablecell's videoplayer that has max visible height when the scroll stops
-     max height should be atleast comparable to the video layer height
+     Play uitablecell's videoplayer that has max visible video layer height
+     when the scroll stops.
      */
     func pausePlayeVideosFor(tableView: UITableView, appEnteredFromBackground: Bool = false) {
         let visisbleCells = tableView.visibleCells
@@ -184,8 +197,13 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
             let videoCellURL = videoCell.videoURL else {
             return
         }
-        
-        if maxHeight > videoCell.videoLayer.bounds.size.height - 30 {
+        let minCellLayerHeight = videoCell.videoLayer.bounds.size.height * 0.5
+        /**
+         Visible video layer height should be at least more than max of predefined minimum height and
+         cell's videolayer's 50% height to play video.
+         */
+        let minimumVideoLayerVisibleHeight = max(minCellLayerHeight, ASVideoPlayerController.minimumLayerHeightToPlay)
+        if maxHeight > minimumVideoLayerVisibleHeight {
             if appEnteredFromBackground {
                 setupVideoFor(url: videoCellURL)
             }
@@ -193,7 +211,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
         }
     }
     
-    //set observing urls false when objects are removed from cache
+    // Set observing urls false when objects are removed from cache
     func cache(_ cache: NSCache<AnyObject, AnyObject>, willEvictObject obj: Any) {
         if let videoObject = obj as? ASVideoContainer {
             observingURLs[videoObject.url] = false
