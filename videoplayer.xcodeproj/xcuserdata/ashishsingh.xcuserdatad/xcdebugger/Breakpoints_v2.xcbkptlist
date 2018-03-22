@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/ShotTableViewCell.swift"
-            timestampString = "542477880.733636"
+            timestampString = "543405452.283883"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/ShotTableViewCell.swift"
-            timestampString = "542477880.7571909"
+            timestampString = "543405452.294769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -361,12 +361,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.372399"
+            timestampString = "543405452.295705"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "playVideo(withLayer:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -377,12 +377,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.426278"
+            timestampString = "543405452.450196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "playVideoWithLayer(layer:url:)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "playVideo(withLayer:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -393,12 +393,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.42679"
+            timestampString = "543405452.451188"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "playVideoWithLayer(layer:url:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "playVideo(withLayer:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -409,12 +409,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.427193"
+            timestampString = "543405452.4521019"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "playVideoWithLayer(layer:url:)"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "pauseVideo(forLayer:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -425,156 +425,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.427634"
+            timestampString = "543405452.4530981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "pauseVideoWithLayer(layer:url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.4280601"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "playVideoWithLayer(layer:url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.428462"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
-            landmarkName = "observeValue(forKeyPath:of:change:context:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.428929"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.429283"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.429636"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.430011"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.43038"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.430716"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "removeObserverFor(url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.431095"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "removeObserverFor(url:)"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "playVideo(withLayer:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -617,11 +473,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.431541"
+            timestampString = "543405452.454012"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "ASVideoPlayerController"
             landmarkType = "3">
          </BreakpointContent>
@@ -633,11 +489,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.431886"
+            timestampString = "543405452.454882"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "cache(_:willEvictObject:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -665,12 +521,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.432296"
+            timestampString = "543405452.4559489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "setUpNewPlayerObjectForURL(url:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setupVideoFor(url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -681,12 +537,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.432624"
+            timestampString = "543405452.4568419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "setUpNewPlayerObjectForURL(url:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "setupVideoFor(url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -697,12 +553,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.432981"
+            timestampString = "543405452.4577529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "setUpNewPlayerObjectForURL(url:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "setupVideoFor(url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -713,12 +569,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.433329"
+            timestampString = "543405452.458616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "observeValue(forKeyPath:of:change:context:)"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "pauseVideo(forLayer:url:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -729,91 +585,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.433663"
+            timestampString = "543405452.459453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "observeValue(forKeyPath:of:change:context:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.4339989"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.434352"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.434682"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.435024"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "pauseVideoWithLayer(layer:url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.4353729"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "removeFromSuperLayer(layer:url:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -825,13 +601,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.435715"
+            timestampString = "543405452.460157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "ASVideoPlayerController"
-            landmarkType = "3">
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "pauseVideo(forLayer:url:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -841,13 +617,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.436036"
+            timestampString = "543405452.4610389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "ASVideoPlayerController"
-            landmarkType = "3">
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "removeFromSuperLayer(layer:url:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -873,44 +649,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/ShotTableViewCell.swift"
-            timestampString = "542477880.803663"
+            timestampString = "543405452.461908"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
             landmarkName = "layoutSubviews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.43638"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "542886828.436693"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "pausePlayeVideosFor(tableView:appEnteredFromBackground:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

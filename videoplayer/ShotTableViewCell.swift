@@ -16,8 +16,8 @@ class ShotTableViewCell: UITableViewCell, ASAutoPlayVideoLayerContainer {
     
     var videoURL: String? {
         didSet{
-            if videoURL != nil{
-                ASVideoPlayerController.sharedVideoPlayer.setUpNewPlayerObjectForURL(url: videoURL!)
+            if let videoURL = videoURL {
+                ASVideoPlayerController.sharedVideoPlayer.setupVideoFor(url: videoURL)
             }
             videoLayer.isHidden = videoURL == nil
         }

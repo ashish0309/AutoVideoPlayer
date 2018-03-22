@@ -19,7 +19,7 @@
 		60E2A94720510A4F00FFF0F8 /* ShotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60E2A93B20510A4E00FFF0F8 /* ShotTableViewCell.xib */; };
 		60E2A94C20510A4F00FFF0F8 /* ShotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2A94020510A4E00FFF0F8 /* ShotTableViewCell.swift */; };
 		60E2A94D20510A4F00FFF0F8 /* ASVideoLayerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2A94120510A4F00FFF0F8 /* ASVideoLayerObject.swift */; };
-		60E2A94E20510A4F00FFF0F8 /* ASVideoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2A94220510A4F00FFF0F8 /* ASVideoObject.swift */; };
+		60E2A94E20510A4F00FFF0F8 /* ASVideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2A94220510A4F00FFF0F8 /* ASVideoContainer.swift */; };
 		60E2A94F20510A4F00FFF0F8 /* ASVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E2A94320510A4F00FFF0F8 /* ASVideoPlayerController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,7 @@
 		60E2A93B20510A4E00FFF0F8 /* ShotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotTableViewCell.xib; sourceTree = "<group>"; };
 		60E2A94020510A4E00FFF0F8 /* ShotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotTableViewCell.swift; sourceTree = "<group>"; };
 		60E2A94120510A4F00FFF0F8 /* ASVideoLayerObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoLayerObject.swift; sourceTree = "<group>"; };
-		60E2A94220510A4F00FFF0F8 /* ASVideoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoObject.swift; sourceTree = "<group>"; };
+		60E2A94220510A4F00FFF0F8 /* ASVideoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoContainer.swift; sourceTree = "<group>"; };
 		60E2A94320510A4F00FFF0F8 /* ASVideoPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASVideoPlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,7 @@
 		60E2A9502051A04D00FFF0F8 /* VideoPlayLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				60E2A94220510A4F00FFF0F8 /* ASVideoObject.swift */,
+				60E2A94220510A4F00FFF0F8 /* ASVideoContainer.swift */,
 				60E2A94320510A4F00FFF0F8 /* ASVideoPlayerController.swift */,
 				60E2A94120510A4F00FFF0F8 /* ASVideoLayerObject.swift */,
 			);
@@ -293,7 +293,7 @@
 				60E2A903205106AD00FFF0F8 /* AppDelegate.swift in Sources */,
 				60E2A93520510A3B00FFF0F8 /* AppUtilities.swift in Sources */,
 				60E2A94D20510A4F00FFF0F8 /* ASVideoLayerObject.swift in Sources */,
-				60E2A94E20510A4F00FFF0F8 /* ASVideoObject.swift in Sources */,
+				60E2A94E20510A4F00FFF0F8 /* ASVideoContainer.swift in Sources */,
 				60E2A94F20510A4F00FFF0F8 /* ASVideoPlayerController.swift in Sources */,
 				60B0B93F205BC45600E0BA36 /* ViewController.swift in Sources */,
 				60E2A94C20510A4F00FFF0F8 /* ShotTableViewCell.swift in Sources */,

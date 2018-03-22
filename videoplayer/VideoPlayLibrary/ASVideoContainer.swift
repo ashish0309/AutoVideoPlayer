@@ -8,9 +8,10 @@
 
 import UIKit
 import AVFoundation
-class ASVideoObject: NSObject {
+class ASVideoContainer: NSObject {
     var url: String!
     var play = false
+    
     var playOn: Bool {
         didSet {
             if playOn && playerItem.status == .readyToPlay{
@@ -21,14 +22,14 @@ class ASVideoObject: NSObject {
             }
         }
     }
+    
     let player: AVPlayer!
     let playerItem: AVPlayerItem!
+    
     init(player: AVPlayer, item: AVPlayerItem, url: String) {
         self.player = player
         self.playerItem = item
         self.url = url
         playOn = false
     }
-    
-    
 }
