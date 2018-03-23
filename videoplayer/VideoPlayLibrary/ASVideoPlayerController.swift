@@ -64,9 +64,9 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
                 return
             }
             /**
-             Need to check whether asset loaded successfully, if not successfu then don't create
+             Need to check whether asset loaded successfully, if not successful then don't create
              AVPlayer and AVPlayerItem and return without caching the videocontainer,
-             so that, the assets can be tried to be downlaoded again when need be.
+             so that, the assets can be tried to be downloaded again when need be.
              */
             var error: NSError? = nil
             let status = asset.statusOfValue(forKey: "playable", error: &error)
@@ -96,7 +96,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
             }
         }
     }
-    
+    // Play video with the AVPlayerLayer provided
     func playVideo(withLayer layer: AVPlayerLayer, url: String) {
         videoURL = url
         currentLayer = layer
