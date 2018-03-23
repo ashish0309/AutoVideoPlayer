@@ -20,7 +20,10 @@ protocol ASAutoPlayVideoLayerContainer {
 }
 
 class ASVideoPlayerController: NSObject, NSCacheDelegate {
-    static var minimumLayerHeightToPlay: CGFloat = 60
+    var minimumLayerHeightToPlay: CGFloat = 60
+    // Mute unmute video
+    var mute = false
+    var preferredPeakBitRate: Double = 1000000
     static private var playerViewControllerKVOContext = 0
     static let sharedVideoPlayer = ASVideoPlayerController()
     //video url for currently playing video
@@ -59,6 +62,23 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
         asset.loadValuesAsynchronously(forKeys: requestedKeys) { [weak self] in
             guard let strongSelf = self else {
                 return
+            }
+            /**
+             Need to check whether asset loaded successfully, if not successfu then don't create
+             AVPlayer and AVPlayerItem and return without caching the videocontainer,
+             so that, the assets can be tried to be downlaoded again when need be.
+             */
+            var error: NSError? = nil
+            let status = asset.statusOfValue(forKey: "playable", error: &error)
+            switch status {
+                case .loaded:
+                    break
+                case .failed, .cancelled:
+                    print("Failed to load asset successfully")
+                    return
+                default:
+                    print("Unkown state of asset")
+                    return
             }
             let player = AVPlayer()
             let item = AVPlayerItem(asset: asset)
@@ -99,7 +119,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
         currentLayer = nil
         if let videoContainer = self.videoCache.object(forKey: url as NSString) {
             videoContainer.playOn = false
-            videoContainer.play = false
+            //videoContainer.play = false
             removeObserverFor(url: url)
         }
     }
@@ -202,7 +222,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
          Visible video layer height should be at least more than max of predefined minimum height and
          cell's videolayer's 50% height to play video.
          */
-        let minimumVideoLayerVisibleHeight = max(minCellLayerHeight, ASVideoPlayerController.minimumLayerHeightToPlay)
+        let minimumVideoLayerVisibleHeight = max(minCellLayerHeight, minimumLayerHeightToPlay)
         if maxHeight > minimumVideoLayerVisibleHeight {
             if appEnteredFromBackground {
                 setupVideoFor(url: videoCellURL)

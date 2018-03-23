@@ -8,13 +8,13 @@
 
 import UIKit
 import AVFoundation
-class ASVideoContainer: NSObject {
-    var url: String!
-    var play = false
-    
+class ASVideoContainer {
+    var url: String
     var playOn: Bool {
         didSet {
-            if playOn && playerItem.status == .readyToPlay{
+            player.isMuted = ASVideoPlayerController.sharedVideoPlayer.mute
+            playerItem.preferredPeakBitRate = ASVideoPlayerController.sharedVideoPlayer.preferredPeakBitRate
+            if playOn && playerItem.status == .readyToPlay {
                 player.play()
             }
             else{
@@ -23,8 +23,8 @@ class ASVideoContainer: NSObject {
         }
     }
     
-    let player: AVPlayer!
-    let playerItem: AVPlayerItem!
+    let player: AVPlayer
+    let playerItem: AVPlayerItem
     
     init(player: AVPlayer, item: AVPlayerItem, url: String) {
         self.player = player
