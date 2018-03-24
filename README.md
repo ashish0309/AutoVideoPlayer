@@ -3,9 +3,11 @@ Play/pause videos automatically in UITableview when an UITableViewCell is in foc
 Can be easily extended to support UICollectionView
 
 * Easily implement video player in any UITableView subclass
-* Easily pause/play any video
+* Automatic video play when video view is visible and option to easily pause/play any video
+* Mute/Unmute videos
 * Videos are cached in memory and will be removed when there is memory pressure
-* Highly performant
+* The scroll of UITableView is super smooth since video assets are downloaded on background thread and played only when assets are      completely downloaded ensuring the main thead is never blocked
+* Option to provide different bit rate for videos
 * Works when the app comes again from background
 
 It can also be used to play videos in any subclass of UIView.
