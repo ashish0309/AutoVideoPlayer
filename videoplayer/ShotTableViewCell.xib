@@ -19,16 +19,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6qD-0T-f5v" userLabel="Top Stack View">
-                        <rect key="frame" x="15" y="15" width="290" height="469.5"/>
+                        <rect key="frame" x="20" y="10" width="280" height="479.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gug-IQ-54y" userLabel="shotImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="290" height="261"/>
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="252"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gug-IQ-54y" secondAttribute="height" multiplier="1:0.9" id="T3Z-md-fkL"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4D-jk-OWr">
-                                <rect key="frame" x="0.0" y="269" width="290" height="200.5"/>
+                                <rect key="frame" x="0.0" y="260" width="280" height="219.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,10 +38,10 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6qD-0T-f5v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="FG6-kz-8YE"/>
-                    <constraint firstAttribute="trailing" secondItem="6qD-0T-f5v" secondAttribute="trailing" constant="15" id="bec-U0-ZaE"/>
-                    <constraint firstAttribute="bottom" secondItem="6qD-0T-f5v" secondAttribute="bottom" constant="15" id="jJD-YB-VbE"/>
-                    <constraint firstItem="6qD-0T-f5v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jWi-Po-6QK"/>
+                    <constraint firstItem="6qD-0T-f5v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FG6-kz-8YE"/>
+                    <constraint firstAttribute="trailing" secondItem="6qD-0T-f5v" secondAttribute="trailing" constant="20" id="bec-U0-ZaE"/>
+                    <constraint firstAttribute="bottom" secondItem="6qD-0T-f5v" secondAttribute="bottom" constant="10" id="jJD-YB-VbE"/>
+                    <constraint firstItem="6qD-0T-f5v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jWi-Po-6QK"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

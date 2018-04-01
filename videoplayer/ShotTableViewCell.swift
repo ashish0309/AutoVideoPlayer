@@ -50,7 +50,7 @@ class ShotTableViewCell: UITableViewCell, ASAutoPlayVideoLayerContainer {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        let horizontalMargin: CGFloat = 15
+        let horizontalMargin: CGFloat = 20
         let width: CGFloat = bounds.size.width - horizontalMargin * 2
         let height: CGFloat = (width * 0.9).rounded(.up)
         videoLayer.frame = CGRect(x: 0, y: 0, width: width, height: height)
