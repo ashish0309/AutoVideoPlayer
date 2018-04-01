@@ -106,13 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/ShotTableViewCell.swift"
-            timestampString = "543472924.408275"
+            timestampString = "544273255.604436"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "visibleVideoHeight()"
-            landmarkType = "7">
+            landmarkName = "ShotTableViewCell"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -122,13 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/ShotTableViewCell.swift"
-            timestampString = "543472924.40846"
+            timestampString = "544273255.687415"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "visibleVideoHeight()"
-            landmarkType = "7">
+            landmarkName = "ShotTableViewCell"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -361,7 +361,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.409072"
+            timestampString = "544273255.688457"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "101"
@@ -377,7 +377,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.410053"
+            timestampString = "544273255.689473"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -393,7 +393,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.410777"
+            timestampString = "544273255.690064"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -409,7 +409,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.411517"
+            timestampString = "544273255.6907589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
@@ -425,7 +425,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.412189"
+            timestampString = "544273255.691319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -473,7 +473,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.412915"
+            timestampString = "544273255.692004"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "233"
@@ -489,13 +489,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.41359"
+            timestampString = "544273255.69269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "234"
             endingLineNumber = "234"
-            landmarkName = "cache(_:willEvictObject:)"
-            landmarkType = "7">
+            landmarkName = "ASVideoPlayerController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -521,7 +521,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.41436"
+            timestampString = "544273255.693367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -537,7 +537,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.414965"
+            timestampString = "544273255.693965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -553,7 +553,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.415575"
+            timestampString = "544273255.694486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -569,7 +569,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.416209"
+            timestampString = "544273255.695008"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -585,7 +585,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.416811"
+            timestampString = "544273255.695582"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
@@ -601,13 +601,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.417431"
+            timestampString = "544273255.6961811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
             endingLineNumber = "116"
-            landmarkName = "pauseVideo(forLayer:url:)"
-            landmarkType = "7">
+            landmarkName = "ASVideoPlayerController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -617,13 +617,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.418051"
+            timestampString = "544273255.696784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
             endingLineNumber = "132"
-            landmarkName = "removeFromSuperLayer(layer:url:)"
-            landmarkType = "7">
+            landmarkName = "ASVideoPlayerController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -649,7 +649,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/ShotTableViewCell.swift"
-            timestampString = "543472924.418712"
+            timestampString = "544273255.697253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -665,7 +665,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.41877"
+            timestampString = "544273255.697552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -681,7 +681,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.419286"
+            timestampString = "544273255.698028"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -697,7 +697,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "videoplayer/VideoPlayLibrary/ASVideoPlayerController.swift"
-            timestampString = "543472924.419802"
+            timestampString = "544273255.698447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"

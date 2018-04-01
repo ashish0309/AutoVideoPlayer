@@ -194,7 +194,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
     }
     
     /**
-     Play uitablecell's videoplayer that has max visible video layer height
+     Play UITableViewCell's videoplayer that has max visible video layer height
      when the scroll stops.
      */
     func pausePlayeVideosFor(tableView: UITableView, appEnteredFromBackground: Bool = false) {
