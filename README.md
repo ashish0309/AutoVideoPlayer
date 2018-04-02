@@ -26,9 +26,9 @@ Drag and drop the VideoPlayLibrary folder in your project
 var videoLayer: AVPlayerLayer = AVPlayerLayer()
     
 var videoURL: String? {
-    didSet{
-        if videoURL != nil{
-            ASVideoPlayerController.sharedVideoPlayer.setUpNewPlayerObjectForURL(url: videoURL!)
+    didSet {
+        if let videoURL = videoURL {
+            ASVideoPlayerController.sharedVideoPlayer.setupVideoFor(url: videoURL)
         }
         videoLayer.isHidden = videoURL == nil
     }
@@ -45,24 +45,21 @@ func visibleVideoHeight() -> CGFloat {
 
 Put following code in viewDidLoad
 ```
-NotificationCenter.default.addObserver(self, selector:#selector(self.appEnteredFromBackground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+NotificationCenter.default.addObserver(self,
+                                       selector: #selector(self.appEnteredFromBackground),
+                                       name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
 ```
 
 Add following code to play/pause when view appears/disappears
 ```
-override func viewWillDisappear(_ animated: Bool) {
-    super.viewWillDisappear(animated)
-}
-
 override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     pausePlayeVideos()
 }
 ```
-Add following method
+Add following methods
 
 ```
-Implement following methods
 @objc func appEnteredFromBackground() {
     ASVideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(tableView: tableView, appEnteredFromBackground: true)
 }
@@ -80,7 +77,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 }
 
 func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-    if let videoCell = cell as? ASAutoPlayVideoLayerContainer, let _ = videoCell.videoURL {
+    if let videoCell = cell as? ASAutoPlayVideoLayerContainer, videoCell.videoURL != nil {
         ASVideoPlayerController.sharedVideoPlayer.removeLayerFor(cell: videoCell)
     }
 }
